@@ -26,7 +26,9 @@ catch (PDOException $e) {
     exit();
 }
 foreach ($result as $row) {
-    $output[] = $row['id'];
+    $output[] = $row['post_date'];
+    $output[] = $row['artcle_title'];
+    $output[] = $row['artcle_text'];
 }
 include 'output.html.php';
 
