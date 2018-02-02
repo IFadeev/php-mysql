@@ -25,7 +25,7 @@ catch (PDOException $e) {
     include 'error.html.php';
     exit();
 }
-while ($row = $result->fetch()) {
+foreach ($result as $row) {
     $output[] = $row['id'];
 }
 include 'output.html.php';
