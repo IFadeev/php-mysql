@@ -10,7 +10,7 @@ try {
     $pdo->exec('SET NAMES "utf8"');
 }
 catch (PDOException $e) {
-    $error = "There's no the connection to DB" . '<br>' .
+    $error = "There's no connection to DB" . '<br>' .
         $e->getMessage();
     include 'error.html.php';
     exit();
@@ -20,7 +20,7 @@ try {
     $result = $pdo->query($sql);
 }
 catch (PDOException $e) {
-    $error = "There's no the connection to DB" . '<br>' .
+    $error = "There's no connection to DB" . '<br>' .
         $e->getMessage();
     include 'error.html.php';
     exit();
