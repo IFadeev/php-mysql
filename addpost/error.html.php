@@ -8,7 +8,7 @@
 
 <p>
 <?php
-echo 'It seems like we have a error. Do something!' . $error
+echo 'It seems like we have a error. Do something!' . '<br>' .$error
 ?>
 </p>
 
