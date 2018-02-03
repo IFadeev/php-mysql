@@ -60,8 +60,6 @@
              include 'error.html.php';
              exit();
          }
-         header('Location: .');
-         exit();
      }
  try {
      $sql = 'SELECT * FROM `articles`';
