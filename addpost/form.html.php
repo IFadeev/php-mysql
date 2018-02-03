@@ -12,8 +12,8 @@
 <body>
 <form action="?" method="post">
     <div>
-        <label for ="artcl-title">Название статьи:</label>
-        <input type="text" name="artcl-title" id="artcl-title" placeholder="Название статьи">
+        <label for ="artcltitle">Название статьи:</label>
+        <input type="text" name="artcltitle" id="artcltitle" placeholder="Название статьи">
     </div>
     <div>
         <label for="ctgr">Категория</label>
