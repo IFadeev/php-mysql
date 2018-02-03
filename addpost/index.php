@@ -44,13 +44,13 @@
          try {
              $sql = 'INSERT INTO articles SET 
                  id = NULL,
-                 artcle_title = :artcl-title,
+                 artcle_title = :artcltitle,
                  artcle_text = :text,
                  categoria_id = :ctgr,
                  post_date = NOW(),
                  views = "0" ';
              $s = $pdo->prepare($sql);
-             $s->bindValue(':artcl-title', $_POST['artcl-title']);
+             $s->bindValue(':artcl-title', $_POST['artcltitle']);
              $s->bindValue(':text',  $_POST['text']);
              $s->bindValue(':ctgr', $_POST['ctgr']);
              $s->execute();
