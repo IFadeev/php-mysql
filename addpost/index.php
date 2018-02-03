@@ -56,8 +56,7 @@
              $s->execute();
              }
              catch (PDOException $e) {
-             $error = "There's no connection to DB" . '<br>' .
-                 $e->getMessage();
+             $error = $e->getMessage();
              include 'error.html.php';
              exit();
          }
