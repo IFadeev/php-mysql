@@ -51,6 +51,7 @@
                  views = "0" ';
              $s = $pdo->prepare($sql);
              $s->bindValue('');
+             $s->execute();
              }
              catch (PDOException $e) {
              $error = "There's no connection to DB" . '<br>' .
