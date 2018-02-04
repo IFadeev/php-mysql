@@ -1,0 +1,52 @@
+CREATE TABLE articles ( 
+id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+artcle_title VARCHAR(255) NOT NULL , 
+artcle_text TEXT NOT NULL , 
+author_id INT(11) NOT NULL,
+category_id INT(11) NOT NULL , 
+post_date DATETIME NOT NULL , 
+views INT(11) NOT NULL,
+CONSTRAINT FK_category_articles FOREIGN KEY (category_id) REFERENCES category (category_id)
+) 
+DEFAULT CHARACTER SET utf8 ENGINE = InnoDB;
+
+CREATE TABLE category (
+category_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+category_name VARCHAR(255)
+)
+DEFAULT CHARACTER SET utf8 ENGINE = InnoDB;
+
+--------
+
+INSERT INTO category (category_id, category_name) 
+VALUES ('NULL', 'PHP');
+
+INSERT INTO articles SET
+id = NULL,
+artcle_title = "Типы переменных PHP",
+artcle_text = "object (ссылка на объект) Ссылка на объект, который реализует несколько принципов объектно-ориентиро-
+ванного программирования. Внутренняя структура объекта похожа на ассоциативный
+массив, за исключением того, что для доступа к отдельным элементам (свойствам) и
+функциям (методам) объекта используется оператор ->, а не квадратные скобки. Еще раз предупреждаем, что переменные в PHP хранят не сами объекты, а лишь ссылки
+на них. Это означает, что при копировании таких переменных (например, оператором
+'$a = $obj') данные объекта в памяти не дублируются, и последующее изменение объекта
+'$a' повлечет за собой немедленное изменение объекта '$obj'.",
+author_id = "1",
+category_id = "1",
+post_date = NOW(),
+views = "0";
+
+
+
+
+CREATE TABLE author (
+author_id INT(11) NOT NULL PRIMARY KEY,
+author_name VARCHAR(255) NOT NULL,
+author_email VARCHAR(255) NOT NULL
+)
+DEFAULT CHARACTER utf8 ENGINE = InnoDB;
+ 
+
+
+
+ENGINE = InnoDB;
