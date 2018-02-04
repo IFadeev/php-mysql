@@ -76,5 +76,4 @@
      $output[] = $row['artcle_title'];
      $output[] = $row['artcle_text'];
  }
-
  include 'output.html.php';
