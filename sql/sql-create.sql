@@ -68,37 +68,47 @@ category_id = "1",
 post_date = NOW(),
 views = "0";
 
-INSERT INTO articles SET
+IINSERT INTO articles SET
 id = NULL,
-artcle_title = "Ëèòåðàòóðíàÿ ìåòàôîðà: íàïèñàíèå êîäà",
-artcle_text = "Ñàìàÿ ïðèìèòèâíàÿ ìåòàôîðà, îïèñûâàþùàÿ ðàçðàáîòêó ÏÎ, áåðåò íà÷àëî â âû#
-ðàæåíèè «íàïèñàíèå êîäà». Ñîãëàñíî ëèòåðàòóðíîé ìåòàôîðå ðàçðàáîòêà ïðîãðàì#
-ìû ïîõîæà íà íàïèñàíèå ïèñüìà: âû ñàäèòåñü çà ñòîë, áåðåòå áóìàãó, ïåðî è ïè#
-øåòå ïèñüìî ñ íà÷àëà äî êîíöà. Ýòî íå òðåáóåò íèêàêîãî ôîðìàëüíîãî ïëàíèðî#
-âàíèÿ, à ìûñëè, âûðàæàåìûå â ïèñüìå, ôîðìóëèðóþòñÿ àâòîðîì ïî õîäó äåëà.
-Íà ýòîé ìåòàôîðå îñíîâàíû è ìíîãèå äðóãèå èäåè. Äæîí Áåíòëè (Jon Bentley)
-ãîâîðèò, ÷òî ïðîãðàììèñò äîëæåí áûòü ñïîñîáåí ñåñòü ó êàìèíà ñî ñòàêàíîì áðåí#
-äè, õîðîøåé ñèãàðîé, îõîòíè÷üåé ñîáàêîé ó íîã è «ñôîðìóëèðîâàòü ïðîãðàììó»
-ïîäîáíî òîìó, êàê ïèñàòåëè ñîçäàþò ðîìàíû. Áðàéàí Êåðíèãàí è Ô. Äæ. Ïëîäæåð
-íàçâàëè ñâîþ êíèãó î ñòèëå ïðîãðàììèðîâàíèÿ «The Elements of Programming Style»
-(Kernighan and Plauger, 1978), îáûãðûâàÿ íàçâàíèå êíèãè î ëèòåðàòóðíîì ñòèëå
-«The Elements of Style» (Strunk and White, 2000). Ïðîãðàììèñòû ÷àñòî ãîâîðÿò îá
-«óäîáî÷èòàåìîñòè ïðîãðàììû».
-Èíäèâèäóàëüíóþ ðàáîòó íàä íåáîëüøèìè ïðîåêòàìè ìåòàôîðà íàïèñà#
-íèÿ ïèñüìà õàðàêòåðèçóåò äîâîëüíî òî÷íî, íî â öåëîì îíà îïèñûâàåò
-ðàçðàáîòêó ÏÎ íåïîëíî è íåàäåêâàòíî. Ïèñüìà è ðîìàíû îáû÷íî ïðèíàä#
-ëåæàò ïåðó îäíîãî ÷åëîâåêà, òîãäà êàê íàä ïðîãðàììàìè îáû÷íî ðàáîòàþò ãðóïïû
-ëþäåé ñ ðàçíûìè ñôåðàìè îòâåòñòâåííîñòè. Çàêîí÷èâ ïèñàòü ïèñüìî, âû çàïå÷àòû#
-âàåòå åãî â êîíâåðò è îòïðàâëÿåòå. Ñ ýòîãî ìîìåíòà èçìåíèòü âû åãî íå ìîæåòå, è
-ïèñüìî âî âñåõ îòíîøåíèÿõ ÿâëÿåòñÿ çàâåðøåííûì. Èçìåíèòü ÏÎ íå òàê óæ òðóäíî,
-è âðÿä ëè ðàáîòó íàä íèì ìîæíî êîãäà#íèáóäü ïðèçíàòü çàêîí÷åííîé. Èç îáùåãî
-îáúåìà ðàáîòû íàä òèïè÷íîé ïðîãðàììíîé ñèñòåìîé äâå òðåòè îáû÷íî âûïîëíÿ#
-þòñÿ ïîñëå âûïóñêà ïåðâîé âåðñèè ïðîãðàììû, à èíîãäà ýòà öèôðà äîñòèãàåò öåëûõ
-90 % (Pigoski, 1997). Â ëèòåðàòóðå ïîîùðÿåòñÿ îðèãèíàëüíîñòü. Ïðè êîíñòðóèðîâà#
-íèè ÏÎ îðèãèíàëüíûé ïîäõîä ÷àñòî îêàçûâàåòñÿ ìåíåå ýôôåêòèâíûì, ÷åì ïîâòîð#
-íîå èñïîëüçîâàíèå èäåé, êîäà è òåñòîâ èç ïðåäûäóùèõ ïðîåêòîâ. Ñëîâîì, ïðîöåññ
-ðàçðàáîòêè ÏÎ, ñîîòâåòñòâóþùèé ëèòåðàòóðíîé ìåòàôîðå, ÿâëÿåòñÿ ñëèøêîì ïðî#
-ñòûì è æåñòêèì, ÷òîáû áûòü ïîëåçíûì.",
+artcle_title = "Fudging Lookup Keys",
+artcle_text = "In each of the three previous examples, you could use the data to key into the table
+directly. That is, you could use messageID as a key without alteration, as you could use
+month in the days-per-month example and gender, maritalStatus, and smokingStatus in
+the insurance rates example.
+You’d always like to key into a table directly because it’s simple and fast. Sometimes,
+however, the data isn’t cooperative. In the insurance rates example, age wasn’t well
+behaved. The original logic had one rate for people under 18, individual rates for ages 18 
+through 65, and one rate for people over 65. This meant that for ages 0 through 17
+and 66 and over, you couldn’t use the age to key directly into a table that stored only
+one set of rates for several ages.",
+author_id = "2",
+category_id = "4",
+post_date = NOW(),
+views = "0";
+
+IINSERT INTO articles SET
+id = NULL,
+artcle_title = "A Programming Foundation: Structured Programming",
+artcle_text = "The term “structured programming” originated in a landmark paper, “Structured Programming,”
+presented by Edsger Dijkstra at the 1969 NATO conference on software
+engineering (Dijkstra 1969). By the time structured programming came and went, the
+term “structured” had been applied to every software-development activity, including
+structured analysis, structured design, and structured goofing off. The various structured
+methodologies weren’t joined by any common thread except that they were all
+created at a time when the word “structured” gave them extra cachet.
+The core of structured programming is the simple idea that a program should use
+only one-in, one-out control constructs (also called single-entry, single-exit control
+constructs). A one-in, one-out control construct is a block of code that has only one
+place it can start and only one place it can end. It has no other entries or exits. Structured
+programming isn’t the same as structured, top-down design. It applies only at
+the detailed coding level.
+A structured program progresses in an orderly, disciplined way, rather than jumping
+around unpredictably. You can read it from top to bottom, and it executes in much the
+same way. Less disciplined approaches result in source code that provides a less
+meaningful, less readable picture of how a program executes in the machine. Less
+readability means less understanding and, ultimately, lower program quality.
+The central concepts of structured programming are still useful today and apply to
+considerations in using break, continue, throw, catch, return, and other topics. ",
 author_id = "2",
 category_id = "4",
 post_date = NOW(),
