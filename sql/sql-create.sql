@@ -38,7 +38,7 @@ INSERT INTO category (category_id, category_name)
 VALUES ('NULL', 'Java');
 
 INSERT INTO category (category_id, category_name) 
-VALUES ('NULL', 'Ñomputer science');
+VALUES ('NULL', 'Computer science');
 
 INSERT INTO author (author_id, author_name, author_email) 
 VALUES ('NULL', 'Matt Zandstra', 'Matt@gmail.com');
@@ -68,7 +68,7 @@ category_id = "1",
 post_date = NOW(),
 views = "0";
 
-IINSERT INTO articles SET
+INSERT INTO articles SET
 id = NULL,
 artcle_title = "Fudging Lookup Keys",
 artcle_text = "In each of the three previous examples, you could use the data to key into the table
@@ -86,7 +86,7 @@ category_id = "4",
 post_date = NOW(),
 views = "0";
 
-IINSERT INTO articles SET
+INSERT INTO articles SET
 id = NULL,
 artcle_title = "A Programming Foundation: Structured Programming",
 artcle_text = "The term “structured programming” originated in a landmark paper, “Structured Programming,”
