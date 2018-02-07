@@ -60,6 +60,23 @@ if (isset($_POST['text'])) {
         include 'error.html.php';
         exit();
     }
+    header('Location: . ');
+    exit();
+}
+if (isset($_GET['deletepost'])) {
+    try {
+        $sql = 'DELETE FROM articles WHERE id = :id';
+        $s = $pdo->prepare($sql);
+        $s->bindValue(':id', $_POST['id']);
+        $s->execute();
+    }
+    catch (PDOException $e) {
+        $error = 'Ошибка при удалении данных' . $e->getMessage();
+        include 'error.html.php';
+        exit();
+    }
+    header('Location: . ');
+    exit();
 }
 try {
     $sql = 'SELECT id, post_date, artcle_title, artcle_text, author_name, author_email 
