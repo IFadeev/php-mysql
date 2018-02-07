@@ -1,6 +1,12 @@
 CREATE DATABASE test_db
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
+  
+CREATE USER 'test_user_artcls'@'localhost' IDENTIFIED WITH mysql_native_password;
+GRANT USAGE ON *.* TO 'test_user_artcls'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 
+MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
+SET PASSWORD FOR 'test_user_artcls'@'localhost' = '***';
+GRANT ALL PRIVILEGES ON `test_db`.* TO 'test_user_artcls'@'localhost';
 
 CREATE TABLE category (
 category_id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
