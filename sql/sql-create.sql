@@ -1,4 +1,4 @@
-CREATE DATABASE forstudy
+CREATE DATABASE test_db
   DEFAULT CHARACTER SET utf8
   DEFAULT COLLATE utf8_general_ci;
 
