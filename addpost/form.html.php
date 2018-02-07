@@ -18,9 +18,15 @@
     <div>
         <label for="ctgr">Категория</label>
         <select name="ctgr" id="ctgr">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
+            <option value="1">PHP</option>
+            <option value="2">Python</option>
+            <option value="3">Java</option>
+            <option value="4">Computer science</option>
+        </select>
+        <label for="author">Автор</label>
+        <select name="author" id="author">
+            <option value="1">Matt Zandstra</option>
+            <option value="2">Steven McConnell</option>
         </select>
     </div>
     <div>
