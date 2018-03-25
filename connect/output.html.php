@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Let's try to connect? </title>
+    <title>Let's try to connect?</title>
 </head>
 <body>
 <p>What is that?</p>
